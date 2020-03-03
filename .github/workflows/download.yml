@@ -1,0 +1,39 @@
+name: CI Download DE SARS-COV-2 Cases from RKI
+
+on:
+  push:
+    branches:
+      - master
+  schedule:
+    - cron:  '* 7 * * *'
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout current repo
+        uses: actions/checkout@v2
+      - name: Get current directory and files
+        run: |
+          pwd
+          ls
+      - name: Install Python Requirements
+        run: |
+          pip install -r scripts/requirements.txt
+      - name: Download Records
+        run: |
+          python scripts/download.py
+          ls dataset/daily
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+          git status
+          git add .
+          git commit -m "Update Dataset" || echo "Nothing to update"
+          git status
+      - name: Push changes
+        uses: ad-m/github-push-action@master
+        with:
+          repository: DataHerb/sars-cov-2-germany
+          github_token: ${{ secrets.GITHUB_TOKEN }}
