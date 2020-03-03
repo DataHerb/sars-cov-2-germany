@@ -21,6 +21,7 @@ jobs:
           ls
       - name: Install Python Requirements
         run: |
+          python --verion
           pip install -r scripts/requirements.txt
       - name: Download Records
         run: |
