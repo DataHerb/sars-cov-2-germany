@@ -131,6 +131,7 @@ class DailyAggregator():
 
         self.df = pd.concat(dfs)
         self.df.sort_values(by=["datetime", "cases"], inplace=True)
+        self.df.drop_duplicates(inplace=True)
 
     def cache(self):
         self.df.to_csv(
