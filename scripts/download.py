@@ -51,7 +51,7 @@ class SARSCOV2DE():
             raise Exception("Did not find datetime from webpage")
 
         dt_from_re = dt_from_re[0]
-        dt_from_re = dateutil.parser.parse(dt_from_re)
+        dt_from_re = dateutil.parser.parse(dt_from_re, dayfirst=True)
         self.datetime = dt_from_re.isoformat()
         self.timestamp = dt_from_re.timestamp()
 
