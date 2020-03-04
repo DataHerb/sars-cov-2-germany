@@ -1,18 +1,4 @@
 state,cases,datetime
-Brandenburg,1,2020-03-03T15:00:00
-Sachsen,1,2020-03-03T15:00:00
-Thüringen,1,2020-03-03T15:00:00
-Bremen,2,2020-03-03T15:00:00
-Hamburg,2,2020-03-03T15:00:00
-Niedersachsen,2,2020-03-03T15:00:00
-Rheinland-Pfalz,2,2020-03-03T15:00:00
-Schleswig Holstein,2,2020-03-03T15:00:00
-Berlin,3,2020-03-03T15:00:00
-Hessen,12,2020-03-03T15:00:00
-Baden-Württemberg,28,2020-03-03T15:00:00
-Bayern,37,2020-03-03T15:00:00
-Nordrhein-Westfalen,103,2020-03-03T15:00:00
-sum,196,2020-03-03T15:00:00
 Brandenburg,1,2020-03-04T10:00:00
 Saarland,1,2020-03-04T10:00:00
 Sachsen,1,2020-03-04T10:00:00
