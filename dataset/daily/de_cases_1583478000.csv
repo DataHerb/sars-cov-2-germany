@@ -1,0 +1,17 @@
+state,cases,datetime
+Brandenburg,1,2020-03-06T07:00:00
+Saarland,1,2020-03-06T07:00:00
+Sachsen,1,2020-03-06T07:00:00
+Thüringen,1,2020-03-06T07:00:00
+Bremen,3,2020-03-06T07:00:00
+Mecklenburg-Vorpommern,5,2020-03-06T07:00:00
+Schleswig Holstein,7,2020-03-06T07:00:00
+Hamburg,8,2020-03-06T07:00:00
+Rheinland-Pfalz,8,2020-03-06T07:00:00
+Berlin,15,2020-03-06T07:00:00
+Hessen,15,2020-03-06T07:00:00
+Niedersachsen,18,2020-03-06T07:00:00
+Bayern,79,2020-03-06T07:00:00
+Baden-Württemberg,91,2020-03-06T07:00:00
+Nordrhein-Westfalen,281,2020-03-06T07:00:00
+sum,534,2020-03-06T07:00:00
